@@ -7,7 +7,7 @@ int main(int argc, char ** argv) {
 
 	auto lineEdit = new QLineEdit();
 	lineEdit->setAlignment(Qt::AlignHCenter);
-	auto completer = new QCompleter(QStringList({"thunar"}));
+	auto completer = new QCompleter({"thunar", "firefox", "urxvt", "subl3", "chromium", "qbittorrent", "skype"});
 	completer->setCompletionMode(QCompleter::InlineCompletion);
 	lineEdit->setCompleter(completer);
 
